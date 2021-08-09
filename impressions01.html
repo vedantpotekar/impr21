@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Impressions | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="impressions01.css">
+    <link rel="stylesheet" href="impressions02.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+<div id="particles-js">
+  <!-- CONTENT OF IMPRESSIONS-->
+      <div class="exceptfooter">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navigation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Modules</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Team
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Web</a></li>
+                  <li><a class="dropdown-item" href="#">Media & VFX</a></li>
+                  <li><a class="dropdown-item" href="#">Accounts</a></li>
+                  <li><a class="dropdown-item" href="#">COG</a></li>
+                  <li><a class="dropdown-item" href="#">Decor</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">See all</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rulebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Modules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sponsors</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="banner"></div>
+      </header>
+      <main>
+        <h1 class="glitch">
+            <span aria-hidden="true">RHYTHMS OF RENAISSANCE</span>
+            RHYTHMS OF RENAISSANCE
+            <span aria-hidden="true">RHYTHMS OF RENAISSANCE</span>
+        </h1>
+      </main>
+      </div>
+      <br><br>
+      <footer>
+        <div class="smhandle">
+          <a href="https://www.youtube.com/channel/UC2pSNyxi4qbfR--vfQE_jCg" target="_blank">YouTube   <i class="fa fa-youtube-play fa-lg ythandle" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/coep-impressions-ab7034125/" target="_blank">LinkedIn   <i class="fa fa-linkedin fa-lg lkdinhandle" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/impressionsCOEP" target="_blank">Facebook   <i class="fa fa-facebook fa-lg fbhandle" aria-hidden="true"></i></a>
+      </div>
+      </footer>
+      <!-- <p class="inductions">
+        <button type="button" class="btn"></button>
+      </p> -->
+
+</div>
+<div class="inductions">
+  <p>We are inducting!!</p>
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" class="btn btn-outline-danger btn-lg">Apply now</button>
+</div>
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+<!-- <script src="stats.js"></script> -->
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
